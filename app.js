@@ -58,7 +58,7 @@ app.post("/failure", function (req, res) {
   res.redirect("/")
 })
 
-app.listen(3000, 0.0.0.0, function () {
+app.listen(process.env.PORT || 3000 , function () {
   console.log("server is working");
 })
 // Api Key
